@@ -16,9 +16,9 @@ spec:
       containers:
         - name: memcached-operator
           # Replace this with the built image name
-          image: REPLACE_IMAGE
+          image: docker.io/piterpentester/memcached-oper:v0.0.1
           command:
-          - memcached-operator
+          - oSDKMemcached
           imagePullPolicy: Always
           env:
             - name: WATCH_NAMESPACE
